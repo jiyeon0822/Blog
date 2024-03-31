@@ -2,10 +2,10 @@
 format: 
   html:
     include-css: image_custom.scss
-    css: image_custom.scss
+    # css: image_custom.scss
     page-navigation: false
     sidebar: false
-    theme : [cosmo, image_custom.scss]
+    theme : cosmo
 ---
 <style>
 /* CSS styles here */
@@ -35,6 +35,12 @@ body {
 .extra-large {
     font-size: 72px; /* Or any size larger than the default <h1> size */
     font-weight: bold; /* Optional: makes it visually more impactful */
+}
+
+@media (max-width: 600px) {
+    .extra-large {
+        font-size: 40px;
+    }
 }
 
 .hero-section {

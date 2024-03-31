@@ -63,7 +63,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="image_custom.scss">
 </head>
 
 <body class="nav-fixed">
@@ -158,6 +157,12 @@ body {
 .extra-large {
     font-size: 72px; /* Or any size larger than the default <h1> size */
     font-weight: bold; /* Optional: makes it visually more impactful */
+}
+
+@media (max-width: 600px) {
+    .extra-large {
+        font-size: 40px;
+    }
 }
 
 .hero-section {
