@@ -1,0 +1,12 @@
+{
+  "listingMap": {
+    "posts/index.qmd": [
+      "*.qmd",
+      "*.ipynb"
+    ],
+    "f1_data/index.qmd": [
+      "*.qmd",
+      "*.ipynb"
+    ]
+  }
+}
