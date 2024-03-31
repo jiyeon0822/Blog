@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "f1_data/welcome/index.html",
-    "href": "f1_data/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "f1_data/post-with-code/index.html",
-    "href": "f1_data/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "\nWelcome to JIYEON.Data\n",
@@ -21,11 +7,18 @@
     "text": "Welcome to JIYEON.Data\n\n\nJIYEON.Data: This site features two main sections. One focuses on Formula 1 data visualization and the other on causal inference. It showcases projects that turn complex data into clear visualizations and analyses.\n\n  Learn More"
   },
   {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "The Notebook",
+    "objectID": "f1_data/index.html",
+    "href": "f1_data/index.html",
+    "title": "F1 Data Visualization",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMar 31, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 28, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 31, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 28, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "f1_data/welcome/index.html",
+    "href": "f1_data/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -40,6 +33,27 @@
     "title": "Welcome To My Blog",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/post-with-code copy/index.html",
+    "href": "posts/post-with-code copy/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "The Notebook",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 31, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 31, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 28, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "f1_data/post-with-code/index.html",
+    "href": "f1_data/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
   },
   {
     "objectID": "about.html",
@@ -61,12 +75,5 @@
     "title": "JIYEON KIM",
     "section": "Experience",
     "text": "Experience\n\nEA SPORTS · Full-time Data Analyst Feb 2024 - Present · 2 mosFeb 2024 - Present · 2 mos \nNCSOFT · Full-time Data Analyst Feb 2019 - Jan 2024 · 5 yrsFeb 2019 - Jan 2024 · 5 yrs \nNielsen · Full-time Senior Data Engineer Nov 2014 - Feb 2019 · 4 yrs 4 mosNov 2014 - Feb 2019 · 4 yrs 4 mos"
-  },
-  {
-    "objectID": "f1_data/index.html",
-    "href": "f1_data/index.html",
-    "title": "F1 Data Visualization",
-    "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMar 31, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 28, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   }
 ]
