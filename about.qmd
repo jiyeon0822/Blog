@@ -1,0 +1,36 @@
+---
+title: "JIYEON KIM"
+about:
+    template: trestles
+    image: images/main_cat.jpg
+    image-shape: round
+    links:
+        - icon: linkedin
+          text: LinkedIn
+          url: https://www.linkedin.com/in/jiyeon-k-088823157/
+        - icon: github
+          text: Github
+          url: https://github.com/jiyeon0822/jiyeon.github.io
+        - text: "{{< fa envelope >}} Email"
+          url: mailto:jiyeon910822@gmail.com
+
+---
+
+## About
+
+- F1을 사랑하는 데이터분석가
+
+## Experience
+
+
+- EA SPORTS · Full-time<br>
+Data Analyst<br>
+Feb 2024 - Present · 2 mosFeb 2024 - Present · 2 mos<br>
+<br>
+- NCSOFT · Full-time<br>
+Data Analyst<br>
+Feb 2019 - Jan 2024 · 5 yrsFeb 2019 - Jan 2024 · 5 yrs<br>
+<br>
+- Nielsen · Full-time<br>
+Senior Data Engineer<br>
+Nov 2014 - Feb 2019 · 4 yrs 4 mosNov 2014 - Feb 2019 · 4 yrs 4 mos<br>

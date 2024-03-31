@@ -1,0 +1,45 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensure text elements are centered as well */
+    background-image: url('images/main_cat.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; 
+}
+
+.text-container {
+    color: white; /* Adjust text color for visibility against your background */
+    /* Additional styling for your text container */
+}
+
+.extra-large {
+    font-size: 72px; /* Or any size larger than the default <h1> size */
+    font-weight: bold; /* Optional: makes it visually more impactful */
+}
+
+.hero-section {
+    // background-image: url('images/main_cat.jpg');
+    // background-size: cover;
+    // background-size: 100%;
+    color: white;
+    text-align: center;
+    padding: 0px 0px;
+}
+
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}

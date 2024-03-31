@@ -1,0 +1,18 @@
+---
+format: 
+  html:
+    css: image_custom.scss
+    page-navigation: false
+    sidebar: false
+---
+<div class="column-page" font-color = white>
+<h1 class="extra-large">Welcome to JIYEON.Data</h1>
+<p>
+JIYEON.Data: This site features two main sections. One focuses on Formula 1 data visualization and the other on causal inference.<br> It showcases projects that turn complex data into clear visualizations and analyses.</p>
+<br>
+<br>
+<a href="about.html" class="cta-button">Learn More</a>
+
+</div>
+
+

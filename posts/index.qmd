@@ -1,0 +1,15 @@
+---
+listing:
+  categories: true
+  contents:
+  - '*.qmd'
+  - '*.ipynb'
+  feed: true
+  filter-ui: true
+  sort: date desc
+  sort-ui: false
+  type: default
+page-layout: full
+title: The Notebook
+title-block-bannerrR: false
+---

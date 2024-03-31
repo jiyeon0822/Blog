@@ -1,0 +1,15 @@
+---
+listing:
+  categories: true
+  contents:
+  - '*.qmd'
+  - '*.ipynb'
+  feed: true
+  filter-ui: true
+  sort: date desc
+  sort-ui: false
+  type: default
+page-layout: full
+title: F1 Data Visualization
+title-block-bannerrR: false
+---
