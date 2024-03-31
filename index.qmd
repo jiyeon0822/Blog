@@ -1,6 +1,7 @@
 ---
 format: 
   html:
+    include-css: image_custom.scss
     css: image_custom.scss
     page-navigation: false
     sidebar: false
