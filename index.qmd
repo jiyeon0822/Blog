@@ -5,7 +5,6 @@ format:
     css: image_custom.scss
     page-navigation: false
     sidebar: false
-    background-image: url('images/main_cat.jpg');
     theme : [cosmo, image_custom.scss]
 ---
 <style>
