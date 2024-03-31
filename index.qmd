@@ -4,6 +4,7 @@ format:
     css: image_custom.scss
     page-navigation: false
     sidebar: false
+    theme : [cosmo, image_custom.scss]
 ---
 <div class="column-page" font-color = white>
 <h1 class="extra-large">Welcome to JIYEON.Data</h1>

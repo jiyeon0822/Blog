@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>JIYEON.Data</title>
+<link>https://jiyeon0822.github.io/Blog/f1_data/index.html</link>
+<atom:link href="https://jiyeon0822.github.io/Blog/f1_data/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.3.450</generator>
+<lastBuildDate>Sat, 30 Mar 2024 15:00:00 GMT</lastBuildDate>
+<item>
+  <title>Post With Code</title>
+  <dc:creator>Harlow Malloc</dc:creator>
+  <link>https://jiyeon0822.github.io/Blog/f1_data/post-with-code/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>This is a post with executable code.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>code</category>
+  <category>analysis</category>
+  <guid>https://jiyeon0822.github.io/Blog/f1_data/post-with-code/index.html</guid>
+  <pubDate>Sat, 30 Mar 2024 15:00:00 GMT</pubDate>
+  <media:content url="https://jiyeon0822.github.io/Blog/f1_data/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Welcome To My Blog</title>
+  <dc:creator>Tristan O&#39;Malley</dc:creator>
+  <link>https://jiyeon0822.github.io/Blog/f1_data/welcome/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>This is the first post in a Quarto blog. Welcome!</p>
+<p><img src="https://jiyeon0822.github.io/Blog/f1_data/welcome/thumbnail.jpg" class="img-fluid"></p>
+<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://jiyeon0822.github.io/Blog/f1_data/welcome/index.html</guid>
+  <pubDate>Wed, 27 Mar 2024 15:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
