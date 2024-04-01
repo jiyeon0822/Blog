@@ -1,7 +1,8 @@
 ---
-title: "Chapter.9 Synthetic Control"
+title: "Chapter 9. Synthetic Control"
 author: "Jiyeon Kim"
 date: "2024-04-01"
+description: 'Synthetic Control method(통제집단합성법)에 대해 알아보기'
 categories: [causal inference]
 ---
 
