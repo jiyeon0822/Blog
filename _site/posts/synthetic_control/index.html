@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jiyeon Kim">
-<meta name="dcterms.date" content="2024-03-28">
+<meta name="dcterms.date" content="2024-04-01">
+<meta name="description" content="Synthetic Control method(통제집단합성법)에 대해 알아보기">
 
-<title>JIYEON.Data - Welcome To My Blog</title>
+<title>JIYEON.Data - Chapter 9. Synthetic Control</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -124,19 +125,35 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#synthetic-control-method통제집단합성법" id="toc-synthetic-control-method통제집단합성법" class="nav-link active" data-scroll-target="#synthetic-control-method통제집단합성법">Synthetic Control method(통제집단합성법)</a></li>
+  <li><a href="#synthetic-control의-가정" id="toc-synthetic-control의-가정" class="nav-link" data-scroll-target="#synthetic-control의-가정">Synthetic Control의 가정</a></li>
+  <li><a href="#synthetic-control-구성하기" id="toc-synthetic-control-구성하기" class="nav-link" data-scroll-target="#synthetic-control-구성하기">Synthetic Control 구성하기</a></li>
+  <li><a href="#synthetic-control을-구성할때-주의해야할-점" id="toc-synthetic-control을-구성할때-주의해야할-점" class="nav-link" data-scroll-target="#synthetic-control을-구성할때-주의해야할-점">Synthetic Control을 구성할때 주의해야할 점</a></li>
+  <li><a href="#synthetic-control-대한-검증" id="toc-synthetic-control-대한-검증" class="nav-link" data-scroll-target="#synthetic-control-대한-검증">Synthetic Control 대한 검증</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Welcome To My Blog</h1>
+<h1 class="title">Chapter 9. Synthetic Control</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">news</div>
+    <div class="quarto-category">causal inference</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    Synthetic Control method(통제집단합성법)에 대해 알아보기
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -151,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 28, 2024</p>
+      <p class="date">April 1, 2024</p>
     </div>
   </div>
   
@@ -161,11 +178,146 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+<hr>
+<p><br></p>
+<section id="synthetic-control-method통제집단합성법" class="level3">
+<h3 class="anchored" data-anchor-id="synthetic-control-method통제집단합성법">Synthetic Control method(통제집단합성법)</h3>
+<ul>
+<li><p>counterfactual을 모방할 수 있는 가상의 통제 집단을 구성하는 것 (Predicted counterfactual) → control units을 잘 조합해서 (synthetic) treated unit의 반사실을 흉내내자</p></li>
+<li><p>DID와의 차이</p>
+<ul>
+<li>처치 이전 시점의 parallel trend assumption 필요 없음</li>
+</ul>
+<p><img src="pic_01.png" class="img-fluid"></p>
+<ul>
+<li>did에서 parallel trend를 만족하지 않는 경우 보통은 매칭을 활용 → 하지만 충분히 충족되지 않을 경우 synthetic control을 활용 할 수있음</li>
+</ul></li>
+<li><p>캘리포니아의 담배 규제 예시</p>
+<ul>
+<li>캘리포니아에서 88년 발의안 99호로 담배세 및 건강 보호법을 통과시켜, 소비세를 부과, 담배 판매에 대한 추가 제한 적용 → 캘리포니아 담배 규제(treatment)&nbsp;→ 담배 판매량(outcome)에 영향을 미치는가?</li>
+<li>캘리포니아와 비교 가능한 평행추세를 만족하는 주를 찾기 쉽지않음</li>
+<li>캘리포니아 외의 다른 주를 활용하여 캘리포니아 synthetic 캘리포니아를 생성
+<ul>
+<li>donor pool : 캘리포니아 이외의 다른 주</li>
+</ul></li>
+</ul>
+<p><img src="pic_02.png" class="img-fluid"></p></li>
+<li><p>Netflix예시</p>
+<ul>
+<li>2016 넷플릭스 서비스 확장(130개국) 하지만 인도네시아에서 불발 됨 → 넷플릭스 도입(Treatment) → 불펌에 영향을 미치는가?
+<ul>
+<li>doner pool : 인도네시아 근처의 아시아 국가</li>
+</ul>
+<img src="pic_03.png" class="img-fluid"></li>
+</ul>
+<p><br><br><br></p></li>
+</ul>
+</section>
+<section id="synthetic-control의-가정" class="level3">
+<h3 class="anchored" data-anchor-id="synthetic-control의-가정">Synthetic Control의 가정</h3>
+<p>ex) did 에서는 평행추세</p>
+<ul>
+<li>treatment가 없을때의 counterfactual을 synthetic control을 통해 모방이 가능해야함
+<ul>
+<li>(처치 전 기간에서) 처치그룹과 가상의 통제그룹 사이의 차이가 적어지는 weight를 구해야함 → 최적화 함수를 푸는 문제
+<ul>
+<li><p>이때, 통제 그룹에 가중치를 활용하여 가상의 통제집단을 구하기 때문에 Synthetic control이 통제그룹의 Convex Hull 내에 존재해야함</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="pic_04.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><em>(Convex Hull이란 N 개의 정점 전체 혹은 일부를 사용해 만들 수 있는 다각형으로, 정점 모두를 내부에 포함하면서 최소한의 정점을 사용하여 만드는 다각형)</em></figcaption>
+</figure>
+</div>
+<p><em>(Convex Hull이란 N 개의 정점 전체 혹은 일부를 사용해 만들 수 있는 다각형으로, 정점 모두를 내부에 포함하면서 최소한의 정점을 사용하여 만드는 다각형)</em></p></li>
+<li><p>weight 제약조건 (회귀 모델에 2가지 제약조건을 부과)</p>
+<ul>
+<li>weight는 non-negative이며 그 합이 1이다 → convex hull 내부로 제한(외삽하지 않기 때문에 오버피팅의 가능성 줄임) → convex hull을 벗어나는 경우, 구할수 있는 weight이 무수히 많아지지만 특정 조건에서만 만족하는(Train test에서만 만족하는) 값이 구해질 수도 있다 = 오버피팅 가능성 높아짐</li>
+</ul>
+<p><img src="pic_04_1.png" class="img-fluid"></p></li>
+<li><p>만약 처치 집단의 값이 통제집단의 값에 비해 너무 클 경우 Convex Hull을 벗어나게 될 수 있음 (synthetic control으로 처치 집단을 모방 할 수 없음) → outcome을 normalize를 하여 synthetic control을 구하는 것이 일반적 ex) 캘리포니아(extream value) → 인구당 담배 판매량</p></li>
+</ul></li>
+</ul></li>
+<li>다른 교란 요인은 없어야함</li>
+<li>서로 간섭이 없어야 함(SUTVA : Stable unit treatment value assumption)</li>
+<li>가중치가 분석 기간 내에 안정적으로 적용 가능해야함
+<ul>
+<li>처치 이후도 동일한 가중치를 제공하기 때문에 가중치 자체가 변화할만한 구조적인 변화가 있으면 안됨<br><br><br></li>
+</ul></li>
+</ul>
+</section>
+<section id="synthetic-control-구성하기" class="level3">
+<h3 class="anchored" data-anchor-id="synthetic-control-구성하기">Synthetic Control 구성하기</h3>
+<ul>
+<li>처치 전 기간의 처치집단과 가중치가 적용된 통제집단의 차이가 가장 작아지는 값을 구함</li>
+<li>해당 가중치를 처치 이후에도 동일하게 적용하여 인과 효과를 추정</li>
+</ul>
+<p><img src="pic_05.png" class="img-fluid"></p>
+<p><img src="pic_06.png" class="img-fluid"></p>
+<ul>
+<li>covariate 고려 해야할까?
+<ul>
+<li>covariate 보다 pre-treatment outcome이 훨씬 중요하다는 연구가 나오고 있음</li>
+<li>bias의 범위를 줄이기 위해서 사용 (통계 추정 구간을 줄이기 위해)
+<ul>
+<li>covariate사이의 차이들도 최소화한 값을 찾는 것이 좋음</li>
+<li>처치 전 기간이 짧은 경우에, bias를 더 줄이는 효과가 있음 (pre-treatment 의 기간이 길어질수록 covariate의 영향이 적어짐)</li>
+</ul></li>
+</ul></li>
+<li>도너 풀은 어떻게 고려할까?
+<ul>
+<li>일반적으로는 도너 풀을 모두 사용하지만 모두 사용하게 되면 오버 피팅되기 쉬움</li>
+<li>유의미하게 의미가 있는 도너만 선정해서 사용하는게 좋음<br><br><br></li>
+</ul></li>
+</ul>
+</section>
+<section id="synthetic-control을-구성할때-주의해야할-점" class="level3">
+<h3 class="anchored" data-anchor-id="synthetic-control을-구성할때-주의해야할-점">Synthetic Control을 구성할때 주의해야할 점</h3>
+<ul>
+<li>Synthetic control을 구성할 때, 가장 가까운 그룹들로 구성하는 것이 정확도를 높히는 데에 도움이 됨(interpolation bias 를 줄이는데 도움이됨) ↔︎ 가까운 그룹일 수록 spillover effect가 있을 가능성이 높음</li>
+<li>Synthetic control의 예측력을 높히기 위해서는 충분한 처치 전 기간을 선정하는 것이 좋음 ↔︎ 기간이 길어질 수록 통제 그룹에 구조적 변화가 있을 가능성이 높을 가능성이 있음 (가중치의 문제가 생길 가능성이 높아짐)<br><br><br></li>
+</ul>
+</section>
+<section id="synthetic-control-대한-검증" class="level3">
+<h3 class="anchored" data-anchor-id="synthetic-control-대한-검증">Synthetic Control 대한 검증</h3>
+<ul>
+<li>RMSPE(Root Mean Squared Predtiction Error) ratio를 활용
+<ul>
+<li>유닛들과 Synthetic Control 간의 차이를 왼쪽 그래프처럼 시각화</li>
+<li>처치의 효과가 처치 그룹에만 적용 되어있다는 것을 간접적으로 보여줌 ( = RMSPE ratio가 다른 그룹에 비해 월등히 커야함)</li>
+</ul></li>
+</ul>
+<p><img src="pic_07.png" class="img-fluid"></p>
+<ul>
+<li>도너 풀에 대한 sensitivity test
+<ul>
+<li>covariate없이 synthetic control을 구성했을때와 결과 비교</li>
+<li>도너 풀에서 한 unit씩 제외하며, 결과값 비교 (Leave-One-Out-Cross-Validation)</li>
+</ul></li>
+<li>Train-Test Split 테스트 진행
+<ul>
+<li>pre-treatment 기간을 Train/Test 둘로 나누어서 예측 정확성 확인</li>
+</ul></li>
+<li>Backdating
+<ul>
+<li>처치 시점을 임의의 이전 기간으로 설정 → 실제로 차이가 있지 않아야 함</li>
+</ul></li>
+</ul>
+<p><img src="pic_08.png" class="img-fluid"></p>
+<p>어디에 활용 할수 있을까? (뇌피셜)</p>
+<ul>
+<li>리니지는 56번 특화서버가 존재 (업데이트가 제한적으로 진행) → 해당 서버의 업데이트에 대한 효과를 추정할 경우에, 타 일반 서버들을 가지고 가상의 통제 그룹을 만들어 진행 할 수 있지 않을까?</li>
+</ul>
+<p><br><br><br></p>
+</section>
+<section id="reference" class="level3">
+<h3 class="anchored" data-anchor-id="reference">Reference</h3>
+<ul>
+<li>인과추론의 데이터과학 : <a href="https://youtu.be/0C4_OikuQZc?feature=shared">링크</a></li>
+<li>Causal Inference for The Brave and True : <a href="https://github.com/matheusfacure/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/15-Synthetic-Control.ipynb">링크</a></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

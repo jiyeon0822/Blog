@@ -6,6 +6,9 @@ description: 'Synthetic Control method(통제집단합성법)에 대해 알아�
 categories: [causal inference]
 ---
 
+***
+<br>
+
 ### Synthetic Control method(통제집단합성법)
 
 - counterfactual을 모방할 수 있는 가상의 통제 집단을 구성하는 것 (Predicted counterfactual)
@@ -32,6 +35,8 @@ categories: [causal inference]
         - doner pool : 인도네시아 근처의 아시아 국가
         
         ![](pic_03.png)
+       
+    <br><br><br>
         
 
 ### Synthetic Control의 가정
@@ -59,16 +64,18 @@ ex) did 에서는 평행추세
 - 다른 교란 요인은 없어야함
 - 서로 간섭이 없어야 함(SUTVA : Stable unit treatment value assumption)
 - 가중치가 분석 기간 내에 안정적으로 적용 가능해야함
-    - 처치 이후도 동일한 가중치를 제공하기 때문에 가중치 자체가 변화할만한 구조적인 변화가 있으면 안됨
+    - 처치 이후도 동일한 가중치를 제공하기 때문에 가중치 자체가 변화할만한 구조적인 변화가 있으면 안됨<br><br><br>
+
+    
 
 ### Synthetic Control 구성하기
 
 - 처치 전 기간의 처치집단과 가중치가 적용된 통제집단의 차이가 가장 작아지는 값을 구함
 - 해당 가중치를 처치 이후에도 동일하게 적용하여 인과 효과를 추정
 
-![Untitled](pic_05.png)
+![](pic_05.png)
 
-![Untitled](pic_06.png)
+![](pic_06.png)
 
 - covariate 고려 해야할까?
     - covariate 보다 pre-treatment outcome이 훨씬 중요하다는 연구가 나오고 있음
@@ -77,12 +84,13 @@ ex) did 에서는 평행추세
         - 처치 전 기간이 짧은 경우에, bias를 더 줄이는 효과가 있음 (pre-treatment 의 기간이 길어질수록 covariate의 영향이 적어짐)
 - 도너 풀은 어떻게 고려할까?
     - 일반적으로는 도너 풀을 모두 사용하지만 모두 사용하게 되면 오버 피팅되기 쉬움
-    - 유의미하게 의미가 있는 도너만 선정해서 사용하는게 좋음
+    - 유의미하게 의미가 있는 도너만 선정해서 사용하는게 좋음<br><br><br>
+
 
 ### Synthetic Control을 구성할때 주의해야할 점
 
 - Synthetic control을 구성할 때, 가장 가까운 그룹들로 구성하는 것이 정확도를 높히는 데에 도움이 됨(interpolation bias 를 줄이는데 도움이됨) ↔ 가까운 그룹일 수록 spillover effect가 있을 가능성이 높음
-- Synthetic control의 예측력을 높히기 위해서는 충분한 처치 전 기간을 선정하는 것이 좋음 ↔ 기간이 길어질 수록 통제 그룹에 구조적 변화가 있을 가능성이 높을 가능성이 있음 (가중치의 문제가 생길 가능성이 높아짐)
+- Synthetic control의 예측력을 높히기 위해서는 충분한 처치 전 기간을 선정하는 것이 좋음 ↔ 기간이 길어질 수록 통제 그룹에 구조적 변화가 있을 가능성이 높을 가능성이 있음 (가중치의 문제가 생길 가능성이 높아짐)<br><br><br>
 
 ### Synthetic Control 대한 검증
 
@@ -91,7 +99,7 @@ ex) did 에서는 평행추세
     - 처치의 효과가 처치 그룹에만 적용 되어있다는 것을 간접적으로 보여줌
     ( = RMSPE ratio가 다른 그룹에 비해 월등히 커야함)
 
-![Untitled](pic_07.png)
+![](pic_07.png)
 
 - 도너 풀에 대한 sensitivity test
     - covariate없이 synthetic control을 구성했을때와 결과 비교
@@ -101,12 +109,14 @@ ex) did 에서는 평행추세
 - Backdating
     - 처치 시점을 임의의 이전 기간으로 설정 → 실제로 차이가 있지 않아야 함
 
-![Untitled](pic_08.png)
+![](pic_08.png)
 
 어디에 활용 할수 있을까? (뇌피셜)
 
 - 리니지는 56번 특화서버가 존재 (업데이트가 제한적으로 진행)
 → 해당 서버의 업데이트에 대한 효과를 추정할 경우에, 타 일반 서버들을 가지고 가상의 통제 그룹을 만들어 진행 할 수 있지 않을까?
+
+ <br><br><br>
 
 ### Reference
 
