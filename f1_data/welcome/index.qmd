@@ -1,6 +1,6 @@
 ---
 title: "Welcome To My Blog"
-author: "Tristan O'Malley"
+author: "Jiyeon Kim"
 date: "2024-03-28"
 categories: [news]
 ---
