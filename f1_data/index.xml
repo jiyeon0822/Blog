@@ -10,31 +10,10 @@
 <atom:link href="https://jiyeon0822.github.io/Blog/f1_data/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.4.552</generator>
-<lastBuildDate>Sun, 31 Mar 2024 00:00:00 GMT</lastBuildDate>
-<item>
-  <title>Post With Code</title>
-  <dc:creator>Harlow Malloc</dc:creator>
-  <link>https://jiyeon0822.github.io/Blog/f1_data/post-with-code/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This is a post with executable code.</p>
-
-
-
- ]]></description>
-  <category>news</category>
-  <category>code</category>
-  <category>analysis</category>
-  <guid>https://jiyeon0822.github.io/Blog/f1_data/post-with-code/</guid>
-  <pubDate>Sun, 31 Mar 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://jiyeon0822.github.io/Blog/f1_data/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
-</item>
+<lastBuildDate>Thu, 28 Mar 2024 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Welcome To My Blog</title>
-  <dc:creator>Tristan O&#39;Malley</dc:creator>
+  <dc:creator>Jiyeon Kim</dc:creator>
   <link>https://jiyeon0822.github.io/Blog/f1_data/welcome/</link>
   <description><![CDATA[ 
 

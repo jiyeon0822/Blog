@@ -2,15 +2,13 @@
   {
     "listing": "/f1_data/index.html",
     "items": [
-      "/f1_data/post-with-code/index.html",
       "/f1_data/welcome/index.html"
     ]
   },
   {
     "listing": "/posts/index.html",
     "items": [
-      "/posts/post-with-code copy/index.html",
-      "/posts/post-with-code/index.html",
+      "/posts/synthetic_control/index.html",
       "/posts/welcome/index.html"
     ]
   }
